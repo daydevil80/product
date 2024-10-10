@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Store</h1>
+        <p>Your one-stop shop for amazing products</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <!-- Step 2: Product Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Goat</td>
+                        <td>$20</td>
+                        <td>This is a great product.</td>
+                        <td><img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/shape/cover/sport/iStock-177369626-1-0e8d40eaabe65d2cb2d745ef45f09229.jpg" alt="Goat"></td>
+                    </tr>
+                    <tr>
+                        <td>pig</td>
+                        <td>$35</td>
+                        <td>This is another great product.</td>
+                        <td><img src="https://preview.redd.it/i-want-a-pet-pig-experiences-v0-ibtvtydyggec1.jpeg?width=640&crop=smart&auto=webp&s=e3ebb79dc87b57440793f1b1a5c07b3974cda09e" alt="pig"></td>
+                    </tr>
+                    <!-- Add more products as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Step 3: Order Form -->
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <form action="submit_order.php" method="POST">
+                <!-- Customer Information -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <!-- Order Details -->
+                <label for="product">Select Product:</label>
+                <select id="product" name="product">
+                    <option value="product1">Goat</option>
+                    <option value="product2">pig</option>
+                </select><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Order">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
