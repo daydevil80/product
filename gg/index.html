@@ -9,13 +9,11 @@
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <h1>Welcome to Our Store</h1>
         <p>Your one-stop shop for amazing products</p>
     </header>
 
-    <!-- Navigation Section -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -24,11 +22,9 @@
         </ul>
     </nav>
 
-    <!-- Main Content Section -->
     <main>
         <section id="products">
             <h2>Our Products</h2>
-            <!-- Step 2: Product Table -->
             <table>
                 <thead>
                     <tr>
@@ -51,23 +47,20 @@
                         <td>This is another great product.</td>
                         <td><img src="https://preview.redd.it/i-want-a-pet-pig-experiences-v0-ibtvtydyggec1.jpeg?width=640&crop=smart&auto=webp&s=e3ebb79dc87b57440793f1b1a5c07b3974cda09e" alt="pig"></td>
                     </tr>
-                    <!-- Add more products as needed -->
                 </tbody>
             </table>
         </section>
 
-        <!-- Step 3: Order Form -->
         <section id="order">
             <h2>Place Your Order</h2>
             <form action="submit_order.php" method="POST">
-                <!-- Customer Information -->
+               
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br>
 
-                <!-- Order Details -->
                 <label for="product">Select Product:</label>
                 <select id="product" name="product">
                     <option value="product1">Goat</option>
@@ -77,13 +70,11 @@
                 <label for="quantity">Quantity:</label>
                 <input type="number" id="quantity" name="quantity" min="1" value="1" required><br>
 
-                <!-- Submit Button -->
                 <input type="submit" value="Submit Order">
             </form>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Your Store. All rights reserved.</p>
     </footer>

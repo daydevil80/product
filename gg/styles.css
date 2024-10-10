@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-/* Header Styles */
+
 header {
     text-align: center;
     padding: 60px 0;
@@ -34,7 +34,7 @@ header p {
     margin-top: 10px;
 }
 
-/* Navigation Styles */
+
 nav {
     background-color: white;
     padding: 20px 0;
@@ -69,7 +69,7 @@ nav ul li a:hover {
     color: #0073e6;
 }
 
-/* Main Content Styles */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -85,7 +85,7 @@ h2 {
     font-weight: 600;
 }
 
-/* Product Table Styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -112,7 +112,7 @@ table td img {
     border-radius: 10px;
 }
 
-/* Form Styles */
+
 form {
     background-color: white;
     padding: 40px;
@@ -168,7 +168,6 @@ form input[type="submit"]:hover {
     background-color: #005bb5;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     padding: 40px 0;
